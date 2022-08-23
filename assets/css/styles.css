@@ -1,0 +1,280 @@
+
+ .datainput{
+    outline: no;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    margin: 20px auto
+}
+.button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px;
+    text-align: center;
+    background-color: rgb(13, 134, 248);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    cursor: pointer;
+    margin: 20px auto;
+    margin-top: 0;
+}
+.button:hover{
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px;
+    text-align: center;
+    background-color: rgb(8, 89, 164);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    cursor: pointer;
+    margin: 20px auto;
+    margin-top: 0;
+}
+
+.button:active{
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px;
+    border-color:rgb(13, 134, 248);
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color:  rgb(13, 134, 248);
+    width: 300px;
+    cursor: pointer;
+    margin: 20px auto;
+    margin-top: 0;
+}
+.headerbutton{
+    border-bottom: 2px solid #eee;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.anchorheader{
+    text-decoration: none;
+    color: #333
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 78px;
+    background: black;
+    padding: 6px 14px;
+    border-radius: 0 20px 0 5px;
+    transition: all 0.5s ease;
+}
+.sidebar.active{
+    width: 240px;
+}
+.sidebar .logocontent .logo{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+
+}
+.sidebar.active .logocontent .logo{
+    width: 240px;
+    opacity: 1;
+}
+.logocontent .logo i{
+    font-size: 28px;
+    margin-right: 5px;
+}
+.logocontent .logo i{
+    font-size: 28px;
+    margin-right: 5px;
+}
+.logocontent .logo .logoname{
+  font-size: 20px;
+  font-weight: 400;
+}
+.sidebar #btn{
+color: #fff;
+position: absolute;
+left: 50%;
+top: 6px;
+font-size: 20px;
+height: 50px;
+width: 50px;
+text-align: center;
+line-height: 50px;
+transform: translateX(-50%)
+}
+.sidebar.active #btn{
+    left: 90%;
+}
+.sidebar ul{
+    margin-top: 20px;
+}
+.sidebar.active ul li{
+   position: relative;
+   height: 50px;
+   width: 100%;
+   margin: 0 5px;
+   list-style: none;
+   line-height: 50px;
+   transition: all .4s ease;
+}
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 -20px;
+    list-style: none;
+    line-height: 50px;
+}
+
+.sidebar ul li .searchbar{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background:#1d1b31;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #fff;
+    transition: all 0.5 ease;
+ }
+ .sidebar.active ul li .searchbar{
+   opacity: 1;
+ }
+ .sidebar ul li .searchbar{
+    opacity: 0;
+  }
+ .sidebar ul li searchbar:hover{
+   color: #1d1b31;
+   background: #fff
+ }
+.sidebar ul li a{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+ }
+ .sidebar ul li a:hover{
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 10%;
+ }
+ .sidebar ul li i{
+    display: flex;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+ }
+ .sidebar .link-name{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+ }
+ .sidebar.active .link-name{
+    opacity: 1;
+    pointer-events: auto;
+ }
+ .sidebar ul li .bx-search-alt-2{
+position: absolute;
+z-index: 99;
+color: #fff;
+font-size: 22px;
+ }
+ .sidebar .profile_content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%
+ }
+ .sidebar .profile_content .profile{
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    background: #1d1b31
+ }
+ .sidebar .profile_content .profile .profile_details{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap
+ }
+ .sidebar.active .profile .profile_details{
+    opacity: 1;
+    pointer-events: auto;
+ }
+ .profile .profile_details img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+ }
+ .profile #logout{
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-align: center;
+ }
+ .sidebar.active .profile #logout{
+ 
+    left: 88%;
+ }
+ .container{
+    position: absolute;
+    height: 100%;
+    width: calc(100%-78px);
+    left: 78px;
+ }
+
+ body:not(.container){
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+ .container{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+ .sidebar.active ~ .container{
+  width: calc(100% - 240px);
+  left: 240px;
+ }
+ #logout{
+    text-decoration: none;
+    color: white;
+ }
+ figure{
+    height: 60px;
+  width: 100%;
+background-color: black;
+ }

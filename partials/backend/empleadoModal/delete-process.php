@@ -14,6 +14,7 @@ if (isset($_POST["delete"])){
     }
     else{
         echo "Fallo total";
+        echo "Test";
     }
     echo "<script>alert('DELETED');window.location.href='../../../index.php'</script>";
     }
